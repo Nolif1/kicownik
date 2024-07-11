@@ -5,7 +5,7 @@
 // @description  powiadomienie kica
 // @author       Nolifequ
 // @icon         https://cdn-icons-png.flaticon.com/512/523/523442.png
-// @match        https://fobos.margonem.pl/
+// @match        https://experimental.margonem.pl/
 // @grant        none
 // @updateURL    https://raw.githubusercontent.com/Nolif1/kicownik/main/kic-resp.user.js
 // @downloadURL  https://raw.githubusercontent.com/Nolif1/kicownik/main/kic-resp.user.js
