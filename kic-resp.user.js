@@ -1,11 +1,11 @@
 // ==UserScript==
-// @name         kic resp
+// @name         KICOWNIK
 // @namespace    http://tampermonkey.net/
 // @version      1.4
-// @description  powiadomienie kica
+// @description  Do działania na NI potrzebny wykrywacz włączony
 // @author       Nolifequ
 // @icon         https://cdn-icons-png.flaticon.com/512/523/523442.png
-// @match        https://experimental.margonem.pl/
+// @match        https://fobos.margonem.pl/
 // @grant        none
 // @updateURL    https://raw.githubusercontent.com/Nolif1/kicownik/main/kic-resp.user.js
 // @downloadURL  https://raw.githubusercontent.com/Nolif1/kicownik/main/kic-resp.user.js
@@ -20,7 +20,7 @@
     ];
 
     let notificationCount = 0;
-    const maxNotifications = 5;
+    const maxNotifications = 1;
 
     function sendPushbulletNotification(title, body) {
         const url = 'https://api.pushbullet.com/v2/pushes';
