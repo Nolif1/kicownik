@@ -54,7 +54,7 @@
             return;
         }
 
-        const mobName = 'Królik';
+        const mobName = 'Zabójczy Królik';
         const elements = document.querySelectorAll('*');
         let found = false;
 
@@ -74,5 +74,5 @@
         }
     }
 
-    const checkInterval = setInterval(checkForMob, 3000);
+    const checkInterval = setInterval(checkForMob, 1000);
 })();
