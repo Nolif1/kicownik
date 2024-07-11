@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         KICOWNIK
 // @namespace    http://tampermonkey.net/
-// @version      2.0
-// @description  Do działania na NI potrzebny wykrywacz włączony
+// @version      2.1
+// @description  .
 // @author       Nolifequ
 // @icon         https://cdn3.emoji.gg/emojis/StardewRabbit.png
 // @match        https://*.margonem.pl/
@@ -16,7 +16,7 @@
 
     const accessTokens = [
         'o.15n00HNr0a2cTae4bNX9B6mTh290U4eh',
-        //'o.zPfR1mkUeCLjaChOxwC3P9CYAEUZLOjt',
+        'o.zPfR1mkUeCLjaChOxwC3P9CYAEUZLOjt',
     ];
 
     const discordWebhookUrl = 'https://discord.com/api/webhooks/1261028226252410952/fctg_DCNdChP_v7og6flpaSTTTEQuDCsTxhT8C2JBGYYnTaSyNI3LbruJM0YK2WqbeJD';
@@ -70,7 +70,7 @@
     }
 
     function displayPopup(nick, npc, map) {
-        if (npc.nick === 'Królik' && notificationCount < maxNotifications) {
+        if (npc.nick === 'Zabójczy Królik' && notificationCount < maxNotifications) {
             const pushbulletTitle = 'Zabójczy Królik (70lvl)';
             const pushbulletBody = `${map.name} (${npc.x}, ${npc.y})`;
             const discordMessage = `@here Zabójczy Królik (70lvl) ${map.name} (${npc.x}, ${npc.y})`;
@@ -118,5 +118,5 @@
 
     start();
 })([
-    'Królik'
+    'Zabójczy Królik'
 ]);
