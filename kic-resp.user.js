@@ -1,14 +1,3 @@
-// ==UserScript==
-// @name         KICOWNIK
-// @namespace    http://tampermonkey.net/
-// @version      1.2
-// @description  Na NI trzeba mieć włączony wykrywacz
-// @author       Nolifequ
-// @icon         https://cdn-icons-png.flaticon.com/512/523/523442.png
-// @match        https://fobos.margonem.pl/
-// @grant        none
-// ==/UserScript==
-
 (function() {
     'use strict';
 
