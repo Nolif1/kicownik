@@ -19,7 +19,7 @@
         'o.zPfR1mkUeCLjaChOxwC3P9CYAEUZLOjt',
     ];
 
-    const discordWebhookUrl = 'https://discord.com/api/webhooks/1261028226252410952/fctg_DCNdChP_v7og6flpaSTTTEQuDCsTxhT8C2JBGYYnTaSyNI3LbruJM0YK2WqbeJD';
+    const discordWebhookUrl = 'https://discord.com/api/webhooks/1261034228527661179/MDDL3KK8WgMe2ntSQTDpoLxSKbX6ify7QQIXecZ68VfP0ZiDdtUjaTvBYVv0qzfEzHWC';
     let notificationCount = 0;
     const maxNotifications = 1;
 
