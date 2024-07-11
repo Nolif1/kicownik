@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         KICOWNIK
 // @namespace    http://tampermonkey.net/
-// @version      1.5
+// @version      1.6
 // @description  Do działania na NI potrzebny wykrywacz włączony
 // @author       Nolifequ
 // @icon         https://cdn-icons-png.flaticon.com/512/523/523442.png
