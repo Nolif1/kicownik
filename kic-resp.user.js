@@ -16,12 +16,11 @@
 
     const accessTokens = [
         'o.15n00HNr0a2cTae4bNX9B6mTh290U4eh',
-        //'o.zPfR1mkUeCLjaChOxwC3P9CYAEUZLOjt',
-        'token3',
+        'o.zPfR1mkUeCLjaChOxwC3P9CYAEUZLOjt',
     ];
 
     let notificationCount = 0;
-    const maxNotifications = 3;
+    const maxNotifications = 5;
 
     function sendPushbulletNotification(title, body) {
         const url = 'https://api.pushbullet.com/v2/pushes';
@@ -55,21 +54,25 @@
             return;
         }
 
-        const targetImageURL = 'https://micc.garmory-cdn.cloud/obrazki/npc/dom/bestia64.gif';
-        const elements = document.querySelectorAll('img');
+        const mobName = 'Zabójczy Królik';
+        const elements = document.querySelectorAll('*');
+        let found = false;
 
         elements.forEach(element => {
-            if (element.src === targetImageURL) {
-                console.log('Znaleziono obrazek:', element);
-                sendPushbulletNotification('Zaginiony Zakonnik Astralny', 'Lokalizacja na mapie');
-                notificationCount++;
-
-                if (notificationCount >= maxNotifications) {
-                    clearInterval(checkInterval);
-                }
+            if (element.textContent.includes(mobName)) {
+                found = true;
             }
         });
+
+        if (found) {
+            sendPushbulletNotification('Zabójczy Królik (tytan 70lvl)', 'Jaskinia Caerbannoga (29,17)');
+            notificationCount++;
+
+            if (notificationCount >= maxNotifications) {
+                clearInterval(checkInterval);
+            }
+        }
     }
 
-    const checkInterval = setInterval(checkForMob, 1000);
+    const checkInterval = setInterval(checkForMob, 3000);
 })();
