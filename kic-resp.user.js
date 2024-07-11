@@ -54,7 +54,7 @@
             return;
         }
 
-        const mobName = 'Zabójczy Królik';
+        const mobName = 'Zabójczy Królikk';
         const elements = document.querySelectorAll('*');
         let found = false;
 
